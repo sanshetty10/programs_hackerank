@@ -1,0 +1,169 @@
+1.
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */
+    printf("\"Hello, World!\"");
+    return 0;
+}
+
+
+2.
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */  
+    printf("Hello World\tHello World ");
+    return 0;
+}
+
+3. 
+          #include <stdio.h>
+          #include <string.h>
+          #include <math.h>
+          #include <stdlib.h>
+          
+          int main() {
+          
+              /* Enter your code here. Read input from STDIN. Print output to STDOUT */
+              printf("Hello World\nHello World");
+              return 0;
+          }
+
+
+4. 
+        #include <stdio.h>
+        #include <string.h>
+        #include <math.h>
+        #include <stdlib.h>
+        
+        int main() {
+        
+            /* Enter your code here. Read input from STDIN. Print output to STDOUT */ 
+            char n[10];
+            int a;
+            float cgpa;
+            char grade[3];
+            scanf("%s",n);
+            scanf("%d",&a);
+            scanf("%f",&cgpa);
+            scanf("%s",grade);
+            cgpa=floor(cgpa*100)/100;
+            printf("Name: %s\n",n);
+            printf("Age: %d\n",a);
+            printf("CGPA: %.2f\n",cgpa);
+             printf("Grade: %s",grade);
+            return 0;
+        }
+
+
+5.        #include <stdio.h>
+          #include <string.h>
+          #include <math.h>
+          #include <stdlib.h>
+          
+          int main() {
+          
+              /* Enter your code here. Read input from STDIN. Print output to STDOUT */  
+              char c;
+              scanf("%c",&c);
+              printf("%d",(int)c);
+              return 0;
+          }
+
+
+6.        #include <stdio.h>
+          #include <string.h>
+          #include <math.h>
+          #include <stdlib.h>
+          
+          int main() {
+          
+              /* Enter your code here. Read input from STDIN. Print output to STDOUT */ 
+              int n;
+              scanf("%d",&n);
+              printf("%c",(char)n);
+              return 0;
+          }
+
+7.        #include <stdio.h>
+          #include <string.h>
+          #include <math.h>
+          #include <stdlib.h>
+          
+          int main() {
+          
+              /* Enter your code here. Read input from STDIN. Print output to STDOUT */  
+              float n;
+              scanf("%f",&n);
+              printf("%d\n%d\n%d",(int)n,(int)ceil(n),(int)floor(n));
+              return 0;
+          }
+
+
+8.        #include <stdio.h>
+          #include <string.h>
+          #include <math.h>
+          #include <stdlib.h>
+          
+          int main() {
+          
+              /* Enter your code here. Read input from STDIN. Print output to STDOUT */ 
+              int l,b;
+              int p,area;
+              scanf("%d%d",&l,&b);
+              p=2*(l+b);
+              area=l*b;
+              printf("The required length is %d m \nThe required area of carpet is %d sqm",p,area);
+              return 0;
+          }
+
+
+9.      #include <stdio.h>
+        #include <string.h>
+        #include <math.h>
+        #include <stdlib.h>
+        
+        int main() {
+        
+            /* Enter your code here. Read input from STDIN. Print output to STDOUT */ 
+            int a,b,c;
+            int rev,cost;
+            scanf("%d%d%d",&a,&b,&c);
+            rev=a*b;
+            cost=a*c+100;
+            int profit= rev-cost;
+            printf("%d",profit);
+            
+            return 0;
+        }
+
+10.
+        #include <stdio.h>
+        #include <string.h>
+        #include <math.h>
+        #include <stdlib.h>
+        
+        int main() {
+        
+            /* Enter your code here. Read input from STDIN. Print output to STDOUT */
+           int num;
+            scanf("%d",&num);
+            if(num<0){
+                num=-num;
+            }
+            int first=num/1000;
+            int last=num%10;
+            int sum=first+last;
+            printf("%d",sum);
+            
+            return 0;
+        }
