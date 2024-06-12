@@ -1,0 +1,207 @@
+Page 2
+
+1) 
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */
+    int num,group;
+    int ppl,left;
+    scanf("%d%d",&num,&group);
+    ppl=num/group;
+    left=num%group;
+    printf("The number of friends in each team is %d and left out is %d",ppl,left);
+    return 0;
+}
+
+
+2) 
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */ 
+    float I,A,D,F;
+    float p,n,r;
+    scanf("%f%f%f",&p,&n,&r);
+    I=(p*n*r)/100;
+    A=I+p;
+    D=I*0.02f;
+    F=A-D;
+    printf("%.2f \n%.2f\n%.2f\n%.2f ",I,A,D,F);
+    return 0;
+}
+
+
+3)
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */  
+    int x1,x2,y1,y2;
+    float x3,y3;
+    scanf("%d%d%d%d",&x1,&y1,&x2,&y2);
+    x3=(float)(x1+x2)/2;
+    y3=(float)(y1+y2)/2;
+    printf("Arun's house is located at(%.1f,%.1f)",x3,y3);
+    return 0;
+}
+
+
+4)
+#include <cmath>
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+using namespace std;
+
+
+int main() {
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */
+      int x1,y1,h;
+    cin>>x1>>y1;
+    int p1=x1-3;
+    int p2=y1-4;
+    h=max(p1,p2);
+    cout<<h;
+    
+    return 0;
+}
+
+
+
+5)
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */  
+     int dol1,cent1,dol2,cent2;
+    scanf("%d%d%d%d",&dol1,&cent1,&dol2,&cent2);
+    int dol=dol1+dol2;
+    int cent=cent1+cent2;
+    int c=cent/100;
+    dol=dol+c;
+    int c1=cent%100;
+    printf("%d\n%d",dol,c1);
+    return 0;
+}
+
+
+6)
+#include <stdio.h>
+
+int main() {
+    int total_coins, ben_share_percentage, blackbeard_share_percentage;
+    scanf("%d %d %d", &total_coins, &ben_share_percentage, &blackbeard_share_percentage);
+    int ben_share = (total_coins * ben_share_percentage) / 100;
+    int remaining_after_ben = total_coins - ben_share;
+    int blackbeard_share = (remaining_after_ben * blackbeard_share_percentage) / 100;
+    int remaining_after_blackbeard = remaining_after_ben - blackbeard_share;
+    int other_pirates_share = remaining_after_blackbeard / 3;
+    printf("%d\n", ben_share);
+    printf("%d\n", blackbeard_share);
+    printf("%d\n", other_pirates_share);
+  return 0;
+}
+
+
+
+7)
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */ 
+    int num;
+    int rem;
+    scanf("%d",&num);
+    for(int i=0;i<3;i++){
+        rem=num%10;
+        printf("%d",rem);
+        num=num/10;
+    }
+    return 0;
+}
+
+
+
+8)
+#include <stdio.h>
+
+int main() {
+    int n;
+    scanf("%d", &n);
+    if (n < 1 || n > 9) {
+        printf("Invalid input\n");
+        return 1;
+    }
+    int zero_based_index = n - 1;
+    int row = zero_based_index / 3;
+    int column = zero_based_index % 3;
+    printf("%d %d\n", row, column);
+
+    return 0;
+}
+
+
+9)
+#include <stdio.h>
+#include <ctype.h>
+
+int main() {
+    char ch;
+    scanf("%c", &ch);
+    if ((ch >= 'a' && ch <= 'z') || (ch >= 'A' && ch <= 'Z')) {
+        ch = tolower(ch);
+        if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u') {
+            printf("Vowel\n");
+        } else {
+            printf("Consonant\n");
+        }
+    } else {
+        printf("Not an alphabet\n");
+    }
+    return 0;
+}
+
+
+
+10)
+#include <stdio.h>
+
+int main() {
+    int units;
+    double bill = 0.0;
+    scanf("%d", &units);
+    if (units <= 200) {
+        bill = units * 0.5;
+    } else if (units <= 400) {
+        bill = (units * 0.65) + 100;
+    } else if (units <= 600) {
+        bill = (units * 0.80) + 200;
+    } else {
+        bill = (units * 1.25) + 425;
+    }
+    printf("Rs.%d\n", (int)(bill + 0.5));  // Adding 0.5 to round to the nearest integer
+
+    return 0;
+}
